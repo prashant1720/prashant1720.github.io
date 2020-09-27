@@ -1737,7 +1737,7 @@ Blog
   overflow: hidden;
   width: 300px;
   border: 6px solid var(--clr-primary);
-  height: 31.5rem;
+  height: 33.5rem;
   box-shadow: 5px 5px 45px -15px black;
 }
 
@@ -1800,7 +1800,7 @@ Blog
 
 .user {
   display: flex;
-  margin-top: 0;
+  margin-top: 18px;
 }
 
 .user img {
