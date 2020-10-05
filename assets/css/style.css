@@ -1,15 +1,6 @@
-/**
-* Template Name: iPortfolio - v1.1.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #272829;
 }
 
@@ -28,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -248,7 +239,7 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #hero p span {
@@ -375,7 +366,7 @@ section {
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #122f57;
 }
@@ -386,7 +377,7 @@ section {
   margin-top: 20px;
   color: #122f57;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -409,7 +400,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #050d18;
 }
 
@@ -451,8 +442,8 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* text-transform: uppercase; */
+  font-family: "Mulish", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
 }
@@ -833,7 +824,7 @@ section {
   display: none;
   color: red;
   margin: 0 0 15px 0;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 13px;
 }
 
@@ -1050,6 +1041,7 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-primary);
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 800px) {
@@ -1525,6 +1517,8 @@ Sidebar
 @media screen and (min-width: 760px) {
   .project-card .desc {
     min-height: 170px;
+
+    font-family: "Roboto", sans-serif;
   }
 }
 
