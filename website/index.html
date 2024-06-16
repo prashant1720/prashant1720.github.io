@@ -2,628 +2,253 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Prashant Sharma || Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-    crossorigin="anonymous" />
-  <link rel="shortcut icon" href="./images/GNlogo.png" type="icon">
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Prashant Sharma</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 1.5rem;
+        background-color: #e5e7eb;
+        border-radius: 0.375rem;
+        overflow: hidden;
+    }
+
+    .progress-bar-fill {
+        height: 100%;
+        background-color: #3b82f6;
+        transition: width 2s ease;
+        border-radius: 0.375rem 0 0 0.375rem;
+        width: 0%; /* Start with width 0 for animation */
+    }
+
+    .progress-bar-label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+    }
+</style>
 </head>
 
-<body>
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/images/Prashant.jpeg" alt="" class="img-fluid rounded-circle" />
-        <h1 class="text-light" align="center">
-          <a href="index.html">
-            <h3>Prashant</h3>
-          </a>
-        </h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/prashant1720" class="Github"><i class="fab fa-github-alt"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/mr__prashantsharma__/?hl=en" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/prashantsharma1999" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav class="nav-menu">
-        <ul>
-          <li class="active">
-            <a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a>
-          </li>
-          <li>
-            <a href="#about"><i class="bx bx-user"></i> <span>About</span></a>
-          </li>
-          <li>
-            <a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-          </li>
-          <li>
-            <a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a>
-          </li>
-          <li>
-            <a href="#blogs"><i class="fa fa-rss" aria-hidden="true"></i>Blog</a>
-          </li>
-          <li>
-            <a href="#certificate"><i class="fa fa-certificate" aria-hidden="true"></i> certificates</a>
-          </li>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-6">
+      <h1 class="text-2xl font-bold">Prashant Sharma</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#blogs" class="hover:text-blue-500">Blogs</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Resume</a></li>
         </ul>
       </nav>
-      <button type="button" class="mobile-nav-toggle d-xl-none">
-        <i class="icofont-navigation-menu"></i>
-      </button>
     </div>
   </header>
 
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Prashant Sharma</h1>
-      <p>
-        I'm a
-        <span class="typed" data-typed-items=" Web Designer,Developer, Blogger"></span>
+  <!-- Hero Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0 mt-6">
+        <h2 class="text-4xl font-bold mb-4">Hi, I'm Prashant Sharma</h2>
+        <p class="text-xl mb-4">A passionate Web Developer and UI/UX Designer.</p>
+             </div>
+      <div class="lg:w-1/2 flex justify-center">
+        <img class="rounded-full w-64 h-64 object-cover" src="Prashant.jpeg" alt="Prashant Sharma">
+        
+      </div>
+      
+     
+    </div>
+   
+   
+  </section>
+
+  <!-- About Section -->
+ <!-- About Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">About Me</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        I have completed my Master's in Computer and Information Science from the University of Alabama at Birmingham. Currently, I am working as a Web Designer. I actively engage in blogging and sharing insights, which you can find on <a href="https://www.dreamenchantia.com" target="_blank" class="text-blue-500 hover:underline">DreamEnchantia</a>. I have a keen interest in meeting new people and exploring different cultures.
       </p>
+     
+    </div>
+    <div class="flex justify-center ">
+        <div class="bg-blue-100 p-6 rounded-lg shadow-lg flex flex-col items-center mt-4">
+            <img class="w-8 h-6 mb-4" src="https://cdn.pixabay.com/photo/2019/10/19/17/24/gmail-4561841_1280.png" alt="Gmail Icon">
+            <span class="text-xl">sharmaprashant1720@gmail.com</span>
+        </div>
+    </div> 
+   
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-100">
+    <div class="container mx-auto p-4">
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold">Skills</h1>
+        </div>
+    
+        <div class="bg-white p-6 shadow-md rounded-lg">
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-base font-medium text-blue-700">HTML-CSS-JavaScript</span>
+                    <span class="text-sm font-medium text-blue-700">90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 0%;" data-progress="90"></div>
+                    <div class="progress-bar-label">90%</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-base font-medium text-blue-700">UI-UX Design</span>
+                    <span class="text-sm font-medium text-blue-700">85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 0%;" data-progress="85"></div>
+                    <div class="progress-bar-label">85%</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-base font-medium text-blue-700">Data Science-Python</span>
+                    <span class="text-sm font-medium text-blue-700">80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 0%;" data-progress="80"></div>
+                    <div class="progress-bar-label">80%</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-base font-medium text-blue-700">Photoshop-Adobe lightgroom</span>
+                    <span class="text-sm font-medium text-blue-700">75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 0%;" data-progress="75"></div>
+                    <div class="progress-bar-label">75%</div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-base font-medium text-blue-700">Flask-Nodejs</span>
+                    <span class="text-sm font-medium text-blue-700">70%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 0%;" data-progress="70"></div>
+                    <div class="progress-bar-label">70%</div>
+                </div>
+            </div>
+           
+           
+        </div>
+    </div>
+    
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">A webApplication to Request EHR Data</h3>
+          <p class="text-lg">Leveraged React and SQL to develop a web application that allows researchers to request EHR data if they are IRB approved.</p>
+        </div>
+        <div class="bg-orange-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">Data Analysis Pipeline Dashboard</h3>
+          <p class="text-lg">Developed an application using React and Flask that enables users to visualize medical patient data using heatmaps and standalone pipelines to perform gene-analysis.</p>
+        </div>
+        <div class="bg-red-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">Medical Data Processing Web App</h3>
+          <p class="text-lg">Developed a JavaScript-Flask application that works with multiple Oracle databases containing 56.2M drugs, 27000 Gene2Disease, and 18.3M drug-to-disease data.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">Drug Discovery Web App</h3>
+          <p class="text-lg">Worked on a Material-UI based React application that used Morgan fingerprints to efficiently generate novel drug molecules with desired properties for accelerated drug discovery.</p>
+        </div>
+        <div class="bg-yellow-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">Stock-Investment App</h3>
+          <p class="text-lg">Developed a JavaScript-Flask application that analyzes the user portfolio and keeps track of news related to the stock company products over time.</p>
+        </div>
+        <div class="bg-green-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold mb-4">Doctor Advise App</h3>
+          <p class="text-lg">Developed a Flutter application that converts doctor speech into text using Google Speech-to-Text API, and then converts it into a PDF that can be shared on social media.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <main id="main">
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>
-            I'm a 25 years old Graduate student who believes that "The Journey Is More Important Than the Destination".
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/images/Prashant.jpeg" class="img-fluid" alt="" />
+  <!-- Blogs Section -->
+  <section id="blogs" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Blogs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="https://www.dreamenchantia.com/post/best-cloud-service-providing-companies-of-2021" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <img src="https://cdn.pixabay.com/photo/2019/06/14/09/25/cloud-4273197_1280.png" alt="Best Cloud Services" class="w-full h-40 object-cover rounded-lg">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Hi,✌I am Prashant </h3>
-            <p style="color: rgb(27, 19, 61); font-weight: 700;">
-              "Make sure every day you do what matters most. When you know what matters most, everything makes sense.
-              When you don’t know what matters most, anything makes sense.”.
-            </p>
-            <p style="color: rgb(29, 27, 27); font-weight: 400;">
-              I have completed my Master's in <b>Computer and Information Science</b> from the <b>University of Alabama
-                at Birmingham</b>. Currently, I am working as a <b>Web Designer</b>, and I am the founder of
-              <b>DreamEnchantia</b>, where I actively engage in blogging and sharing insights. I have a keen interest in
-              meeting new people and exploring different cultures.</p>
-            <a href="https://www.dreamenchantia.com/" class="btn">DreamEnchantia</a>
+          <h3 class="text-2xl font-semibold mb-2">Best Cloud Services</h3>
+          <p class="text-lg">Cloud computing, in simple terms, means using computing over the cloud, performing all your work over the internet.</p>
+          <p class="mt-4 text-blue-500">Read more</p>
+        </a>
+        <a href="https://www.dreamenchantia.com/post/flutter-best-tools-and-environment-for-development" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <img src="https://www.kindpng.com/picc/m/355-3557482_flutter-logo-png-transparent-png.png" alt="Flutter Development Tools" class="w-full h-40 object-cover rounded-lg">
           </div>
-        </div>
+          <h3 class="text-2xl font-semibold mb-2">Flutter: Best Tools and Environment for Development</h3>
+          <p class="text-lg">A list of tools and practices I use when developing projects using Flutter.</p>
+          <p class="mt-4 text-blue-500">Read more</p>
+        </a>
+        <a href="https://www.dreamenchantia.com/post/getting-started-with-git-and-github" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="Getting Started with Git and GitHub" class="w-full h-40 object-cover rounded-lg">
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Getting Started with Git and GitHub</h3>
+          <p class="text-lg">A guide to help you get started with Git and GitHub, the essential tools for developers.</p>
+          <p class="mt-4 text-blue-500">Read more</p>
+        </a>
+        <a href="https://www.dreamenchantia.com/post/sih-a-guide-to-find-my-potential" target="_blank" rel="noopener noreferrer" class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+            <img src="https://nenow.in/wp-content/uploads/2019/11/Smart-India-Hackathon-1.jpg" alt="SIH – A Guide to Find My Potential" class="w-full h-40 object-cover rounded-lg">
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">SIH – A Guide to Find My Potential</h3>
+          <p class="text-lg">Our journey and experiences during the Smart India Hackathon.</p>
+          <p class="mt-4 text-blue-500">Read more</p>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>The technologies which He prefers using are.</p>
-        </div>
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">Data Science <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Android Development <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Machine Learning <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">Wire Framing & UI Design <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Web Development <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Adobe Photoshop <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+ 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const progressBars = document.querySelectorAll(".progress-bar-fill");
 
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Let us walk you through a Professional doar on who Actually is Prashant Sharma from Education to his work.</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Prashant Sharma</h4>
-              <p>
-                Content writer at DreamEnchantia, someone who loves to talk and know people. For me, the character is a
-                prime trait of a person. Want to know my story or share yours? Then grab a coffee and ping me.
-              </p>
-            </div>
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master’s in Computer Information Science</h4>
-              <h5>2022 - 2023</h5>
-              <p><em>University of Alabama at Birmingham, Birmingham, AL</em></p>
-              <p>The Master of Science in Computer Science program at UAB covers a wide range of topics, including Advanced Operating Systems, Artificial Intelligence, Cloud Computing, Computer Networks, Cybersecurity, Data Mining and Machine Learning, Database Systems, Distributed Systems, Human-Computer Interaction, Software Engineering, and Web Technologies. Students in the program have the option to choose between a thesis or non-thesis track, and are required to complete 30 credit hours of coursework.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Technology in Computer Science</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Jawaharlal Nehru Technological University Hyderabad, Hyderabad, India</em></p>
-              <p>The course includes hardware and software aspects of both computer design and computer applications. The duration of the course is four years, and its syllabus is divided into eight semesters.</p>
-            </div>
-            <h3 class="resume-title">Hackathons</h3>
-            <div class="resume-item">
-              <ul>
-                <li>
-                  <h5>Finalist Of Smart India Hackathon -2020</h5>
-                  <p>One of the finalist teams for the Problem statement Ap63. Worked on an application to generate a PDF report from voice prescription.</p>
-                </li>
-                <li>
-                  <h5>Internal Hackathon -Griet 30 Jan</h5>
-                  <p>We stood first in this Hackathon which was conducted in GRIET Hyderabad. It was an internal college-level hackathon for finalizing student for SIH-2020.</p>
-                </li>
-                <li>
-                  <h5>Hackverse-NIT Karnataka 25-26th Jan 2020</h5>
-                  <p>I was the team leader in this Hackathon. We developed a project that could identify whether a student is in depression or not and a chatbot that could talk with the student and calm him down.</p>
-                </li>
-                <li>
-                  <h5>Megathon-2019 IIIT-HYDERBAD</h5>
-                  <p>In this hackathon, we worked on an application that could find or search content present in a doc on online resources so that it can search other content related to that topic like research Paper related to that topic, But the Project was too big and was complicated we learned a lot from it but were not able to complete it.</p>
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>GitHub organization</h4>
-              <h5>Under ISTE</h5>
-              <p>Started a GitHub organization (ISTE Griet GitHub) at Griet, and we have 37 students who are part of this organization. For them to get started with Git and GitHub. We conducted live sessions for them through google meet.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Web Designer</h4>
-              <h5>May 2023 - Present</h5>
-              <p><em>University of Alabama at Birmingham, Heersink School Of Medicine, Birmingham, AL</em></p>
-              <ul>
-                <li>Developed a React Web-Application to organize user data and perform analysis operations.</li>
-                <li>Developed UI-UX (Figma/Adobe xd) prototype to lay down future development for running projects.</li>
-                <li>Developed back-end web services using .NET to communicate with Oracle databases.</li>
-                <li>Implemented Git-lab integration with react Application to maintain record of project issues and member information.</li>
-                <li>Designed a one-click virtual machine deployment for standalone applications.</li>
-                <li>Utilized Docker for containerized application deployment.</li>
-                <li>Applied Material Design for intuitive, visually engaging interfaces.</li>
-                <li>Leveraged Tailwind CSS for streamlined, consistent styling.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graduate Research Assistant</h4>
-              <h5>Dec 2022 - April 2023</h5>
-              <p><em>University of Alabama at Birmingham, Aimed Lab, Birmingham, AL</em></p>
-              <ul>
-                <li>Developed the Aimed Lab website to effectively represent the lab's mission and research efforts.</li>
-                <li>Presented a poster at the Center for Clinical and Translational Science Conference in Biloxi, MS, showcasing a web application built with Oracle Apex. This tool enables users to explore cancer gene data and understand gene-to-drug interactions across different cancer types.</li>
-                <li>Engineered a machine learning model focused on recommending drugs with low side effects, contributing to personalized medicine advancements.</li>
-                <li>Created a Flask-Javascript application to analyze CSV data and visualize similarities between chemical compounds using Morgan fingerprint and Jaccard coefficient techniques.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Development Intern</h4>
-              <h5>Nov 2020 - April 2021</h5>
-              <p><em>Eight Root Technologies, Hyderabad, India</em></p>
-              <ul>
-                <li>Implemented payment integration using Razorpay on a React application using JavaScript for an application aimed at renting resources required for movie production.</li>
-                <li>Developed backend services using Express to connect with Google Cloud database.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Software Development Intern</h4>
-              <h5>Feb 2020 - June 2020</h5>
-              <p><em>Alfred Technologies, Hyderabad, India</em></p>
-              <ul>
-                <li>Designed a quiz page using Flutter to help users learn native languages of different regions through quizzes.</li>
-                <li>Organized and maintain Google cloud and Firebase for database operations.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        progressBars.forEach(bar => {
+            const progress = bar.getAttribute("data-progress");
+            setTimeout(() => {
+                bar.style.width = progress + "%";
+            }, 500); // Start animation after 500ms delay
+        });
+    });
+</script>
+  <footer class="bg-white py-6 mt-12">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-600">&copy; 2024 Prashant Sharma. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>This Portfolio Reflects the sample of works that Prashant Shamra has done until now. This can tell you to understand what he can do for you if you hire him. Everything from wireframing to complete product development.</p>
-        </div>
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Machine Learning || Deep Learning</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-list">
-          <div class="project-card" id="card-1">
-            <div class="project-img">
-              <img src="assets/img/portfolio/project1.png" alt="EHR Data Request Web App">
-            </div>
-            <div class="header">
-              <h2>React Web App to Request EHR Data</h2>
-              <div class="title">Tech Used - React, SQL</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Leveraged React and SQL to develop a web application that allows researchers to request EHR data if they are IRB approved.</div>
-          </div>
-          <div class="project-card" id="card-2">
-            <div class="project-img">
-              <img src="assets/img/portfolio/project2.png" alt="Data Analysis Dashboard">
-            </div>
-            <div class="header">
-              <h2>Dashboard for Data Analysis Pipeline</h2>
-              <div class="title">Tech Used - React, Flask</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Developed an application using React and Flask that enables users to visualize medical patient data using heatmaps and standalone pipelines to perform gene-analysis.</div>
-          </div>
-          <div class="project-card" id="card-3">
-            <div class="project-img">
-              <img src="assets/img/portfolio/project3.png" alt="Medical Data Processing Web App">
-            </div>
-            <div class="header">
-              <h2>Web App for Medical Data Processing</h2>
-              <div class="title">Tech Used - JavaScript, Flask, Oracle Database</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Developed a JavaScript-Flask application that works with multiple Oracle databases containing 56.2M drugs, 27000 Gene2Disease, and 18.3M drug-to-disease data. The app recommends drugs with the least side effects with 80% best recommendation use cases.</div>
-          </div>
-          <div class="project-card" id="card-4">
-            <div class="project-img">
-              <img src="assets/img/portfolio/project4.png" alt="Drug Discovery Web App">
-            </div>
-            <div class="header">
-              <h2>Web Application for Drug Discovery</h2>
-              <div class="title">Tech Used - Material-UI, React, Morgan Fingerprints</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Worked on a Material-UI based React application that used Morgan fingerprints to efficiently generate novel drug molecules with desired properties for accelerated drug discovery.</div>
-          </div>
-          <div class="project-card" id="card-5">
-            <div class="project-img">
-              <img src="assets/img/portfolio/project5.png" alt="Stock Investment App">
-            </div>
-            <div class="header">
-              <h2>Stock-Investment App</h2>
-              <div class="title">Tech Used - JavaScript, Flask</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Developed a JavaScript-Flask application that analyzes the user portfolio, keeps track of news related to the stock company products over time, and predicts stock growth and future investments.</div>
-          </div>
-          <div class="project-card" id="card-6">
-            <div class="project-img">
-              <img src="assets/img/portfolio/project6.png" alt="Doctor Advise App">
-            </div>
-            <div class="header">
-              <h2>Doctor Advise</h2>
-              <div class="title">Tech Used - Flutter, Google Speech-to-Text API</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Developed a Flutter application that converts doctor speech into text using Google Speech-to-Text API, and then converts it into a PDF that can be shared on social media.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="blogs" class="blogs">
-      <div class="container">
-        <div class="section-title">
-          <h2>Blog</h2>
-          <div class="underline"></div>
-        </div>
-        <div class="section-center blog-center">
-          <div class="containerd">
-            <a href="https://www.dreamenchantia.com/post/best-cloud-service-providing-companies-of-2021" target="_blank" rel="noopener noreferrer">
-              <div class="card">
-                <div class="card-header">
-                  <img src="./assets/img/images/ikigai.jpg" alt="Blog cover" />
-                </div>
-                <div class="card-body">
-                  <span class="tag tag-teal">Technology</span>
-                  <h4>Best cloud services.</h4>
-                  <p>Cloud computing, in simple terms means using computing overcloud, performing all your work over the internet. This work could include the use of software or can involve performing analytics without using your system hardware everything is provided as a service over the Internet.</p>
-                  <div class="user">
-                    <img src="./assets/img/images/Prashant.jpeg" alt="Prashant" />
-                    <div class="user-info">
-                      <h5>Prashant</h5>
-                      <small>May 19</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="https://www.dreamenchantia.com/post/flutter-best-tools-and-environment-for-development" target="_blank" rel="noopener noreferrer">
-              <div class="card">
-                <div class="card-header">
-                  <img src="https://www.kindpng.com/picc/m/355-3557482_flutter-logo-png-transparent-png.png" alt="Blog cover" />
-                </div>
-                <div class="card-body">
-                  <span class="tag tag-teal">Technology</span>
-                  <h4>Flutter:Best tools and environment for Development </h4>
-                  <p>I am a Flutter Developer like you, and I understand how time-consuming it is to set up a workspace with perfect tools and plugin to make your development fast. So here is a list of tools and practices I use when I develop projects using Flutter.</p>
-                  <div class="user">
-                    <img src="./assets/img/images/Prashant.jpeg" alt="Prashant" />
-                    <div class="user-info">
-                      <h5>Prashant</h5>
-                      <small>Jun 18</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="https://www.dreamenchantia.com/post/getting-started-with-git-and-github" target="_blank" rel="noopener noreferrer">
-              <div class="card">
-                <div class="card-header">
-                  <img src="./assets/img/github_logo.png" alt="Blog cover" />
-                </div>
-                <div class="card-body">
-                  <span class="tag tag-teal">Technology</span>
-                  <h4>Getting Started with Git and GitHub</h4>
-                  <p>Absolutely they can and they should use it. As this platform helps them to upload their projects as a repositories which gives them the opportunity showcase their projects.</p>
-                  <div class="user">
-                    <img src="./assets/img//images/Prashant.jpeg" alt="Prashant" />
-                    <div class="user-info">
-                      <h5>Prashant</h5>
-                      <small>Sep 10</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="https://www.dreamenchantia.com/post/sih-a-guide-to-find-my-potential" target="_blank" rel="noopener noreferrer">
-              <div class="card">
-                <div class="card-header">
-                  <img src="https://nenow.in/wp-content/uploads/2019/11/Smart-India-Hackathon-1.jpg" alt="Blog cover" />
-                </div>
-                <div class="card-body">
-                  <span class="tag tag-teal">Technology</span>
-                  <h4>SIH – A guide to find my potential.</h4>
-                  <p>Our Problem Statement was “Voice Prescription” presented by the organization, “Bajaj Fin Serv”. After a week or two of thorough consideration and accommodation of ideas, we set out to develop ‘Doctor’s Voice’.</p>
-                  <div class="user">
-                    <img src="./assets/img/images/Prashant.jpeg" alt="Prashant" />
-                    <div class="user-info">
-                      <h5>Prashant</h5>
-                      <small>Jul 6</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certificate" class="certificate">
-      <div class="container">
-        <div class="section-title">
-          <h2>Certificates</h2>
-          <div class="underline"></div>
-        </div>
-        <div class="card-list">
-          <div class="project-card" id="card-1">
-            <div class="header">
-              <h2>SIH-2020</h2>
-              <div class="title">Participation certificate</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Smart-India-Hackathon-2020: Biggest hackathon in India conducted by the Ministry of Human Resource Development. It was conducted from Aug 2 - Aug 5, 2020. In which they selected our team for the finals on a problem statement: Ap63.</div>
-            <div class="actions">
-              <a href="./assets/img/details/sih.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-2">
-            <div class="header">
-              <h2>Hackverse-2020</h2>
-              <div class="title">Participation certificate</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Hackverse-2020 (NIT Surathkal Mangalore) was an all India level hackathon hosted at NIT Surathkal from 25 to 26th Jan -2020. In which they selected 250 teams out of 3000 teams that applied to it. It was an open hackathon where teams can build anything.</div>
-            <div class="actions">
-              <a href="./assets/img/details/hack.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-3">
-            <div class="header">
-              <h2>MELA-2019</h2>
-              <div class="title">Certificate</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">MELA-2019 (Music,Education,Literature,Arts).It is one of the biggest annual events conducted by ISTE-GRIET-SB every year. Mela 2019 was a huge success, with over 1200+ participants in 30 unique events in a single day.</div>
-            <div class="actions">
-              <a href="./assets/img/details/mela-converted.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-4">
-            <div class="header">
-              <h2>Alfred Technology</h2>
-              <div class="title">LOR</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">Alfred Technology is a research-based Startup that is working on developing an Application to preserve the native languages of our country. With focus on tribal languages We have developed an application in flutter named Trilingo that is present in Playstore.</div>
-            <div class="actions">
-              <a href="./assets/img/details/loralfred.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-5">
-            <div class="header">
-              <h2>ISTE-2019</h2>
-              <div class="title">LOA</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">LOA to recognize my contribution as the Teach lead for ISTE Griet SB 2019. My role in the team was to generate ideas to conduct technical events, Industrial visits, Guest Lectures, etc. because of my contributions. ISTE selected me as the TD for the year 2020.</div>
-            <div class="actions">
-              <a href="./assets/img/details/isteloa.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-6">
-            <div class="header">
-              <h2>Psychology Project</h2>
-              <div class="title">LOA</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">We conducted a psychological survey under Dr. Butchi Raju. Where we scrutinize 957 students from the 1st year of bachelor's. We processed the result of the survey using Data Science. It gave us insights into the behavioral aspects of students.</div>
-            <div class="actions">
-              <a href="./assets/img/details/emoloa.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-6">
-            <div class="header">
-              <h2>AWS Cloud Foundation</h2>
-              <div class="title">Certificate</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">AWS Certification validates cloud expertise to help professionals highlight in-demand skills and organizations build effective, innovative teams for cloud initiatives using AWS.</div>
-            <div class="actions">
-              <a href="./assets/img/details/AWS+Academy+Completion+Certificate_MASTER(ACF).pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="project-card" id="card-6">
-            <div class="header">
-              <h2>Dell Campassador</h2>
-              <div class="title">Certificate</div>
-            </div>
-            <div class="colorband"></div>
-            <div class="desc">I was selected as the Dell campassdor for the Year 2021 for Griet. During this period I conducted events in Griet in collaboration with Dell India.</div>
-            <div class="actions">
-              <a href="./assets/img/Dell Campassador Cerificate-276.pdf" target="_blank" rel="noopener noreferrer">
-                <button>
-                  <span>
-                    <i class="far fa-window-restore"></i>
-                    <span>Certificate</span>
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <center>
-          <h4><u>Check out my Resume</u></h4>
-        </center>
-        <center><a href="./assets/img/details/GoogleResume.pdf" class="btn">Resume</a></center>
-      </div>
-    </section>
-  </main>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
